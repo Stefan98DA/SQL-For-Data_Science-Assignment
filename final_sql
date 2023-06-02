@@ -97,7 +97,7 @@ SELECT
         WHEN created_at > test_start_date 
         AND (DATE_PART('day', created_at - test_start_date) BETWEEN 1 AND 30) THEN 1
         ELSE 0
-       END) AS order_binary
+      END) AS order_binary
 FROM
   (
   SELECT 
